@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.featured {
+  @apply text-yellow-500 dark:text-yellow-200;
+}
+
+h1, h2, h3{
+  @apply dark:text-white;
+}
+
+h1, h2, h3, a, p, span, .theme{
+  transition: .2s ease !important;
+}
+
+h2{
+  @apply text-3xl mb-6 font-semibold;
+  @apply flex items-center gap-3;
+  svg{
+    font-size: 3.2rem;
+  }
+}
+
+h3{
+  @apply text-xl font-bold text-yellow-400;
+}
+
+h4{
+  @apply text-xl font-semibold;
+}
+
+time{
+  @apply text-xs;
+}
+
+// h4{
+//   @apply text-xl font-semibold;
+// }
+
+// a {
+//   @apply text-sm font-medium;
+// }
+
+section{
+  @apply mx-auto;
+  
+  @media screen and (min-width: 640px){
+    max-width: 64rem;
+  }
+  
+  @screen md {
+    max-width: 67.2rem;
+  }
+  
+  @screen lg{
+    max-width: 89.6rem;
+  }
+}
+
+p{
+  @apply text-base;
+}
+
+.theme {
+  @apply bg-gray-50 dark:bg-gray-950;
+  @apply bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))];
+  @apply dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))];
+  
+  @apply text-gray-800 dark:text-gray-300;
+}
+
+.Button{
+  @apply px-4 py-1 border text-base rounded-full;
+  @apply text-gray-800 border-gray-300 bg-gray-100;
+  @apply dark:text-white dark:border-gray-600 dark:bg-gray-800;
+  
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  
+  svg{
+    width: 1.6rem;
+  }
+}

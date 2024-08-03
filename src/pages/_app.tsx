@@ -1,6 +1,13 @@
-import "@/styles/globals.css";
+import StateContextProvider from "@/context/StateContextProvider";
+import "@/styles/App.scss";
 import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <StateContextProvider>
+      <Component {...pageProps} />
+    </StateContextProvider>
+  );
 }
+
+export default App;

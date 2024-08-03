@@ -1,0 +1,18 @@
+.WorkExperience {
+  &__list {
+    @apply mt-16;
+  }
+
+  &__item {
+    @apply md:grid md:gap-10 mx-12 pb-12;
+    grid-template-columns: repeat(5, minmax(auto, 1fr));
+    grid-template-areas: "title title description description description";
+    
+    .title{
+      grid-area: title;
+    }
+    .description{
+      grid-area: description;
+    }
+  }
+}
