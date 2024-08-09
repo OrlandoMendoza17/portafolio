@@ -13,7 +13,7 @@ html {
 }
 
 .featured {
-  @apply text-yellow-500 dark:text-yellow-200;
+  @apply text-cyan-500 dark:text-cyan-200;
 }
 
 h1, h2, h3{
@@ -21,7 +21,7 @@ h1, h2, h3{
 }
 
 h1, h2, h3, a, p, span, .theme{
-  transition: .2s ease !important;
+  transition: .2s linear !important;
 }
 
 h2{
@@ -32,18 +32,6 @@ h2{
   }
 }
 
-h3{
-  @apply text-xl font-bold text-yellow-400;
-}
-
-h4{
-  @apply text-xl font-semibold;
-}
-
-time{
-  @apply text-xs;
-}
-
 // h4{
 //   @apply text-xl font-semibold;
 // }
@@ -52,7 +40,7 @@ time{
 //   @apply text-sm font-medium;
 // }
 
-section{
+section, footer > div {
   @apply mx-auto;
   
   @media screen and (min-width: 640px){
@@ -75,6 +63,8 @@ p{
 .theme {
   @apply bg-gray-50 dark:bg-gray-950;
   @apply bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))];
+  // @apply bg-[radial-gradient(_circle_farthest-corner_at_10%_20%,rgba(97,186,255,1)_0%,_rgba(166,239,253,1)_90.1%)];
+  // background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
   @apply dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))];
   
   @apply text-gray-800 dark:text-gray-300;

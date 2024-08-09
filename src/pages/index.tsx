@@ -3,8 +3,9 @@ import Hero from "@/components/pages/Hero";
 import DarkMode from "@/components/widgets/DarkMode";
 import Header from "@/components/widgets/Header";
 import WorkExperience from "@/components/pages/WorkExperience";
-import { TbCode } from "react-icons/tb";
-import { VscAccount } from "react-icons/vsc";
+import Proyects from "@/components/pages/Proyects";
+import AboutMe from "@/components/pages/AboutMe";
+import Footer from "@/components/widgets/Footer";
 
 const Home = () => {
   return (
@@ -13,16 +14,10 @@ const Home = () => {
       <main className="px-4">
         <Hero />
         <WorkExperience />
-        <section>
-          <h2><TbCode/> Proyectos</h2>
-        </section>
-        <section>
-          <h2><VscAccount/> Sobre mí</h2>
-        </section>
-        <div className="py-10"></div>
-        <div className="py-10"></div>
-        <div className="py-10"></div>
+        <Proyects />
+        <AboutMe />
       </main>
+      <Footer/>
     </DarkMode>
   )
 }

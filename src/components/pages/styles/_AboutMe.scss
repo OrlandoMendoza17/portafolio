@@ -1,0 +1,26 @@
+.AboutMe {
+  @apply mt-24;
+  
+  article{
+    @apply flex flex-col md:flex-row gap-8 justify-center items-center;
+    
+    p {
+      @apply pb-4 font-normal text-gray-700 dark:text-gray-300;
+    }
+    
+    strong{
+      @apply font-normal;
+      font-family: Consolas;
+      
+      span{
+        font-style: italic;
+      }
+    }
+    
+    img{
+      @apply p-1 md:p-2 order-1 md:order-2 ring-1 ring-black/70 dark:ring-white/20 rounded-[1.6rem];
+      width: 242px;
+      transform: rotateZ(3deg);
+    }
+  }
+}

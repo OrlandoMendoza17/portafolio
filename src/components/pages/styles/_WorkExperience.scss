@@ -5,14 +5,46 @@
 
   &__item {
     @apply md:grid md:gap-10 mx-12 pb-12;
+    
+    position: relative;
     grid-template-columns: repeat(5, minmax(auto, 1fr));
     grid-template-areas: "title title description description description";
     
-    .title{
-      grid-area: title;
+    &::before{
+      position: absolute;
+      left: -3.5rem;
+      display: block;
+      content: "";
+      width: .2rem;
+      height: 100%;
+      @apply bg-black/[.2] dark:bg-white/15;
     }
+    
+    .title{
+      @apply pb-12 relative;
+      grid-area: title;
+      h3{
+        @apply text-xl font-bold text-cyan-400;
+      }
+      h4{
+        @apply text-xl font-semibold text-gray-600 dark:text-white;
+      }
+      time{
+        @apply text-sm text-gray-600/80 dark:text-white/80;
+      }
+    }
+    
     .description{
+      @apply pb-4 flex flex-col gap-2;
       grid-area: description;
+      
+      a{
+        @apply text-lg font-medium;
+        @apply text-cyan-500 hover:text-cyan-700;
+        @apply dark:text-cyan-200 dark:hover:text-cyan-400;
+        
+        transition: 0s !important;
+      }
     }
   }
 }

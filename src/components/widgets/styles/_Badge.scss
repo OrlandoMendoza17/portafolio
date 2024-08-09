@@ -1,0 +1,12 @@
+.Badge {
+  @apply py-1 px-2 gap-2 rounded-full;
+  @apply text-xs text-white;
+  
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+  svg{
+    @apply w-4 h-4;
+  }
+}

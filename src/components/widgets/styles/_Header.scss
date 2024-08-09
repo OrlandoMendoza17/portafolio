@@ -9,7 +9,7 @@
     @apply bg-slate-500 px-3 mt-2;
     @apply rounded-full shadow-lg ring-1 backdrop-blur;
     @apply dark:bg-gray-800/90 bg-white/50 ring-white/10;
-    
+    z-index: 10;
     position: fixed;
     display: flex;
     justify-content: center;
