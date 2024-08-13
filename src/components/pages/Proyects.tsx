@@ -1,6 +1,6 @@
 import React from 'react'
-import { TbCode } from 'react-icons/tb'
 import Badge from '../widgets/Badge'
+import { TbCode } from 'react-icons/tb'
 import { TbBrandGithub } from "react-icons/tb";
 import { LuLink } from "react-icons/lu";
 
@@ -24,7 +24,7 @@ const Proyects = () => {
   ]
 
   return (
-    <section className="Proyects">
+    <section id="Proyects" className="Proyects">
       <h2><TbCode /> Proyectos</h2>
       <div className="Proyects__container">
         {

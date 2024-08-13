@@ -21,7 +21,7 @@ const WorkExperience = () => {
   ]
 
   return (
-    <section className="WorkExperience">
+    <section id="WorkExperience" className="WorkExperience">
       <h2> <TbBriefcase /> Experiencia laboral</h2>
       <ol className="WorkExperience__list">
         {

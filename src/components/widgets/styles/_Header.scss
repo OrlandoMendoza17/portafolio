@@ -1,18 +1,28 @@
-.Header {
+#Header {
   display: flex;
   justify-content: center;
   a {
-    @apply text-sm font-medium p-2;
+    @apply text-sm hover:text-cyan-500 dark:hover:text-cyan-400 font-medium p-2;
+    transition: .1s linear !important;
     display: block;
+    
+    &.active {
+      @apply text-cyan-500 dark:text-cyan-400;
+    }
   }
   nav{
-    @apply bg-slate-500 px-3 mt-2;
-    @apply rounded-full shadow-lg ring-1 backdrop-blur;
-    @apply dark:bg-gray-800/90 bg-white/50 ring-white/10;
+    @apply px-3 mt-2;
+    @apply rounded-full;
+    
     z-index: 10;
     position: fixed;
     display: flex;
     justify-content: center;
+    transition: .3s;
+    
+    &.onscroll{
+      @apply ring-1 ring-white/10 bg-white/50 dark:bg-gray-800/90 shadow-lg backdrop-blur;
+    }
   }
   ul{
     

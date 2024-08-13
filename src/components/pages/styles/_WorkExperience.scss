@@ -1,4 +1,6 @@
 .WorkExperience {
+  position: relative;
+  
   &__list {
     @apply mt-16;
   }
@@ -46,5 +48,12 @@
         transition: 0s !important;
       }
     }
+  }
+  
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -6.4rem;
   }
 }

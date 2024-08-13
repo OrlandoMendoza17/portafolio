@@ -1,9 +1,15 @@
+import { Onest, } from 'next/font/google'
 import React from 'react'
 import { VscAccount } from 'react-icons/vsc'
 
+const onest = Onest({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"]
+})
+
 const AboutMe = () => {
   return (
-    <section className="AboutMe">
+    <section id="AboutMe" className="AboutMe">
       <h2><VscAccount /> Sobre mí</h2>
       <article>
         <div className='order-2 md:order-1'>

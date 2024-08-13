@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -39,7 +40,9 @@ h2{
 // a {
 //   @apply text-sm font-medium;
 // }
-
+section{
+  @apply scroll-m-20;
+}
 section, footer > div {
   @apply mx-auto;
   

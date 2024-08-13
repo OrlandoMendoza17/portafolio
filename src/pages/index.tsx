@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <DarkMode>
       <Header />
-      <main className="px-4">
+      <main id="main" className="px-4">
         <Hero />
         <WorkExperience />
         <Proyects />

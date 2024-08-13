@@ -10,7 +10,7 @@
     
     strong{
       @apply font-normal;
-      font-family: Consolas;
+      font-family: Consolas, monaco, monospace;
       
       span{
         font-style: italic;

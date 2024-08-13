@@ -1,32 +1,75 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import StateContext, { ContextState } from '@/context/StateContext'
 import Link from 'next/link'
 import { TbMoon } from "react-icons/tb";
 import { TbSun } from "react-icons/tb";
+import NavLink from './NavLink';
 
+
+export type HeaderLink = {
+  isSection: boolean;
+  sectionId: string;
+  href: string;
+  label: string;
+  threshold: number;
+}
 
 const Header = () => {
-
+  
+  const $navigation = useRef<HTMLElement>(null)
+  
   const { darkMode, setDarkMode } = useContext(StateContext)
 
-  const links = [
-    "Experiencia",
-    "Proyectos",
-    "Sobre mí",
-    "Contacto",
+  const links: HeaderLink[] = [
+    {
+      isSection: true,
+      sectionId: "WorkExperience",
+      href: "/#WorkExperience",
+      label: "Experiencia",
+      threshold: .25,
+    },
+    {
+      isSection: true,
+      sectionId: "Proyects",
+      href: "/#Proyects",
+      label: "Proyectos",
+      threshold: .25,
+    },
+    {
+      isSection: true,
+      sectionId: "AboutMe",
+      href: "/#AboutMe",
+      label: "Sobre mí",
+      threshold: .25,
+    },
+    {
+      isSection: false,
+      sectionId: "",
+      href: "mailto:ommv.17@gmail.com",
+      label: "Contacto",
+      threshold: .25,
+    },
   ]
 
-  // console.log('darkMode:', darkMode);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const $html = document.querySelector("html") as HTMLHtmlElement 
+      if ($html.scrollTop === 0) {
+        $navigation.current?.classList.remove("onscroll")
+      }else{
+        $navigation.current?.classList.add("onscroll")
+      }
+    })
+  }, [])
+
 
   return (
-    <header className="Header">
-      <nav>
+    <header id="Header">
+      <nav ref={$navigation}>
         <ul>
           {
-            links.map((item, index) =>
-              <li key={index}>
-                <Link href="/">{item}</Link>
-              </li>
+            links.map((link, index) =>
+              <NavLink key={index} {...link} />
             )
           }
         </ul>

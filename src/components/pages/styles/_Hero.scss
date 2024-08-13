@@ -1,0 +1,8 @@
+.Hero {
+  @apply py-16 md:py-36 mx-auto;
+  
+  &__call-to-action{
+    @apply text-sm py-1 px-3 bg-green-100 text-green-800 dark:bg-gray-800 dark:text-white/80;
+    @apply rounded-full border border-green-800 dark:border-green-500 hover:scale-105 transition;
+  }
+}
