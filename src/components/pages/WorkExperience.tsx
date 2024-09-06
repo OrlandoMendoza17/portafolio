@@ -5,17 +5,17 @@ const WorkExperience = () => {
 
   const workExperience = [
     {
-      title: "Creador de Contenido",
-      place: "Twitch",
-      time: "Actualmente...",
-      description: "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+      title: "Intern - Web Developer",
+      place: "Alimentos Heinz C.A.",
+      time: "Abril 2023 - Actualidad...",
+      description: "Desarrollo de aplicaciones con Next.js, diseño de bases de datos en MySQL y SQL Server, escritura de consultas SQL optimizadas. Desarrollo de API REST con Express.js y Next.js, autenticación con JSON Web Tokens y Microsoft Authenticator.",
       link: "Saber más",
     },
     {
-      title: "Principal Frontend Engineer",
-      place: "Adevinta Spain",
-      time: "Septiembre 2022",
-      description: "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+      title: "Main Frontend Developer",
+      place: "Prinkipia",
+      time: "Enero 2021 - Marzo 2023",
+      description: "Desarrollo de aplicaciones con React.js y Next.js, configuración entornos de desarrollo con Webpack, optimización de velocidad de carga, implementación de arquitecturas CSS como BEM, plataformas de pago y despliegue de proyectos en Vercel, Netlify y Heroku.",
       link: null,
     },
   ]

@@ -54,10 +54,10 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const $html = document.querySelector("html") as HTMLHtmlElement 
-      if ($html.scrollTop === 0) {
-        $navigation.current?.classList.remove("onscroll")
-      }else{
+      if ($html.scrollTop !== 0) {
         $navigation.current?.classList.add("onscroll")
+      }else{
+        $navigation.current?.classList.remove("onscroll")
       }
     })
   }, [])

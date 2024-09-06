@@ -2,16 +2,24 @@
   display: flex;
   justify-content: center;
   a {
-    @apply text-sm hover:text-cyan-500 dark:hover:text-cyan-400 font-medium p-2;
+    @apply text-xs font-medium px-1 py-2;
     transition: .1s linear !important;
     display: block;
     
     &.active {
       @apply text-cyan-500 dark:text-cyan-400;
     }
+    
+    @media screen and (min-width: 382px){
+      @apply text-sm px-2;
+    }
+    
+    @screen lg {
+      @apply hover:text-cyan-500 dark:hover:text-cyan-400;
+    }
   }
   nav{
-    @apply px-3 mt-2;
+    @apply px-2 mt-2;
     @apply rounded-full;
     
     z-index: 10;
@@ -22,6 +30,10 @@
     
     &.onscroll{
       @apply ring-1 ring-white/10 bg-white/50 dark:bg-gray-800/90 shadow-lg backdrop-blur;
+    }
+    
+    @media screen and (min-width: 382px){
+      @apply px-3;
     }
   }
   ul{

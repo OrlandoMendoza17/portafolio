@@ -13,9 +13,9 @@ const AboutMe = () => {
       <h2><VscAccount /> Sobre mí</h2>
       <article>
         <div className='order-2 md:order-1'>
-          <p>Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la programación con un Amstrad, tenía 10 años. Actualmente estoy <strong className="featured dark:text-cyan-400">liderando equipos de desarrollo en multinacionales</strong>.</p>
-          <p>Algunos de mis éxitos incluyen <strong className="featured dark:text-cyan-400">colaborar con Mozilla para el desarrollo de las primeras apps en su sistema FirefoxOS</strong>. Aunque hoy está desaparecido fue un gran avance en el mundo del desarrollo web.</p>
-          <p>Como creador de contenido, <strong className="featured dark:text-cyan-400">cuento con el canal de habla hispana más visto del mundo en la categoría de <span>Software & Game Development</span> en Twitch</strong>. Mi objetivo es mejorar la empleabilidad de la comunidad hispana y el acceso a contenido de calidad.</p>
+          <p>Me llamo Orlando, inicié mi carrera hace 3 años <strong className="featured dark:text-cyan-400">creando aplicaciones innovadoras con React.js y Next.js</strong>, y desde entonces me convertí en un apasionado del desarrollo web y no he parado de aprender.</p>
+          <p>Durante este tiempo, también tuve la oportunidad de <strong className="featured dark:text-cyan-400">desarrollar API REST con Express.js, utilizando MySQL, PostgreSQL y MongoDB</strong> como motores de bases de datos, siempre buscando optimizar y mejorar la eficiencia de mis proyectos.</p>
+          <p><strong className="featured dark:text-cyan-400">Soy super optimista, determinante, tenaz, analítico y me encantan los retos.</strong> Mi enfoque se centra en seguir creciendo, mantenerme actualizado y cada día asumir nuevos retos y así contribuir al mundo de la tecnología.</p>
         </div>
         {/* <img src="https://porfolio.dev/me.png" alt="" /> */}
         {/* <img src="https://i.imgur.com/6WeiG2g.png" alt="" /> */}
