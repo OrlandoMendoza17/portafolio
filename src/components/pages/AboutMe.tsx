@@ -19,8 +19,9 @@ const AboutMe = () => {
         </div>
         {/* <img src="https://porfolio.dev/me.png" alt="" /> */}
         {/* <img src="https://i.imgur.com/6WeiG2g.png" alt="" /> */}
+        <img src="https://i.imgur.com/UmobBRG.jpg" alt="" />
         {/* <img src="https://media.licdn.com/dms/image/D4E03AQEjTZ1mzHMHSQ/profile-displayphoto-shrink_800_800/0/1721670935297?e=1727913600&v=beta&t=OITOYWCmT05BTv6Nwf8u2FaxTyWYVdjmZLQF1mf6LzA" alt="" /> */}
-        <img src="https://scontent.fmyc2-1.fna.fbcdn.net/v/t39.30808-6/331415081_2357787691047722_1310309690809622306_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=WcvkaakTnfwQ7kNvgFFUP2b&_nc_ht=scontent.fmyc2-1.fna&oh=00_AYBDH09CCXHJ8zyEKz850-u2u-irEgml7FWu1ia9RRMu-g&oe=66BB0EB3" alt="" />
+        {/* <img src="https://scontent.fmyc2-1.fna.fbcdn.net/v/t39.30808-6/331415081_2357787691047722_1310309690809622306_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=WcvkaakTnfwQ7kNvgFFUP2b&_nc_ht=scontent.fmyc2-1.fna&oh=00_AYBDH09CCXHJ8zyEKz850-u2u-irEgml7FWu1ia9RRMu-g&oe=66BB0EB3" alt="" /> */}
       </article>
     </section>
   )
