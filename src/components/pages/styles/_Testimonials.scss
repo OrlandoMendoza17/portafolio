@@ -1,0 +1,29 @@
+.Testimonials {
+  
+  h2 {
+    @apply mt-24;
+  }
+  article {
+    @apply px-6 py-8 md:p-8 mt-10 rounded-3xl;
+    background-color: rgba($color: #000000, $alpha: .05);
+    figure {
+      @apply rounded-full overflow-hidden mx-auto mb-5 md:mb-8;
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      @apply text-xl md:text-2xl font-semibold;
+      text-align: center;
+    }
+    h2 {
+      @apply text-base md:text-xl font-extrabold mt-5 md:mt-8 text-cyan-600;
+      text-align: center;
+      display: block;
+    }
+    
+    .letter {
+      @apply bg-cyan-600 hover:bg-cyan-500 border-b-4 border-cyan-800 py-4 px-2 md:px-4 rounded-2xl;
+      @apply text-sm md:text-base text-center block text-white uppercase font-medium;
+    }
+  }
+}

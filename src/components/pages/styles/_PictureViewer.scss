@@ -1,0 +1,32 @@
+.PictureViewer {
+  @apply p-4;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: .25);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  figure {
+    @apply rounded-xl;
+    background-color: #1b1f23;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 4rem;
+
+    @screen md {
+      padding: 6rem;
+    }
+      
+    img {
+      width: 100%;
+      // width: 280px;
+      // height: 280px;
+    }
+  }
+}

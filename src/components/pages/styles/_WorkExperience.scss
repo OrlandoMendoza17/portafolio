@@ -6,7 +6,7 @@
   }
 
   &__item {
-    @apply md:grid md:gap-10 mx-12 pb-12;
+    @apply md:grid md:gap-10 ml-8 pb-12;
     
     position: relative;
     grid-template-columns: repeat(5, minmax(auto, 1fr));
@@ -20,6 +20,10 @@
       width: .2rem;
       height: 100%;
       @apply bg-black/[.2] dark:bg-white/15;
+    }
+    
+    @screen x_sm {
+      @apply mx-12;
     }
     
     .title{
@@ -38,7 +42,25 @@
     
     .description{
       @apply pb-4 flex flex-col gap-2;
+      @apply text-lg font-medium;
       grid-area: description;
+      
+      li {
+        @apply pl-4 text-base font-normal;
+        position: relative;
+        
+        &::before {
+          @apply bg-cyan-400;
+          content: " "; 
+          position: absolute;
+          display: block;
+          top: 11px;
+          left: 0;
+          width: 7px;
+          height: 3px;
+          
+        }
+      }
       
       a{
         @apply text-lg font-medium;
