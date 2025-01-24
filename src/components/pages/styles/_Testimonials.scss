@@ -27,3 +27,9 @@
     }
   }
 }
+
+.dark {
+  .Testimonials article {
+    background-color: rgba($color: #fff, $alpha: .05);
+  }
+}
