@@ -41,7 +41,7 @@ const Testimonials = () => {
             <h2>{name} / {position} - {company}</h2>
             {
               letter &&
-              <a href="/" className="letter">Ver Carta de recomendación</a>
+              <a href="https://www.linkedin.com/in/yamileth-mujica/" className="letter">Ver Carta de recomendación</a>
             }
           </article>
         )
