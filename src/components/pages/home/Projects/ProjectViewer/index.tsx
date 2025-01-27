@@ -81,8 +81,8 @@ const ProjectViewer = ({ resources, setOpenedResources }: Props) => {
           <div className="overflow-hidden">
             <ul ref={$resourceList} className="ProjectViewer__modal__list">
               {
-                resources.map((resource) =>
-                  <li className={`ProjectViewer__modal__list__item ${resource.url === displayedResource.url ? "!border-cyan-500" : "" }`} onClick={() => setDisplayedResource(resource)}>
+                resources.map((resource, index) =>
+                  <li key={index} className={`ProjectViewer__modal__list__item ${resource.url === displayedResource.url ? "!border-cyan-500" : "" }`} onClick={() => setDisplayedResource(resource)}>
                     <img src={resource.url} alt="" />
                   </li>
                 )
