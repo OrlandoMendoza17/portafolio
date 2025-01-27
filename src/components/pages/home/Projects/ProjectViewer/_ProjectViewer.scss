@@ -1,5 +1,5 @@
 .ProjectViewer {
-  @apply p-4;
+  @apply sm:p-4;
   z-index: 50;
   position: fixed;
   top: 0;
@@ -11,16 +11,28 @@
   align-content: center;
 
   &__modal {
-    @apply p-4 rounded-xl bg-gray-800 mx-auto;
+    @apply sm:p-4 rounded-xl bg-gray-800 mx-auto overflow-hidden;
     width: 100%;
     max-width: 1024px;
     
     &__image {
       position: relative;
-      
-      min-height: 600px;
       display: grid;
       grid-template-rows: 1fr auto;
+      
+      min-height: 230px;
+      
+      @screen xx_sm {
+        min-height: 277px;
+      }
+      
+      @screen x_sm {
+        min-height: 366px;
+      }
+      
+      @screen md {
+        min-height: 600px;
+      }
       
       img {
         align-self: center;
@@ -28,7 +40,7 @@
       // align-content: space-between;
       
       &__description {
-        @apply p-2;
+        @apply p-2 text-xs x_sm:text-sm sm:text-base;
         // position: absolute;
         // left: 0;
         // right: 0;
