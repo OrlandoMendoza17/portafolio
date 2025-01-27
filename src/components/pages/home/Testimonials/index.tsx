@@ -17,7 +17,7 @@ const Testimonials = () => {
       name: "Alejandra Mendoza",
       company: "Crowdar",
       position: "Senior Web Developer",
-      opinion: `"Orlando ha superado mis espectativas desde el diseño hasta el desarrollo".`,
+      opinion: `"Un excelente profesional que puede llevar a cabo un desarrollo completo de aplicaciones en general con las mejores practicas y soluciones.".`,
     },
     // {
     //   picture: "https://media.licdn.com/dms/image/v2/C4D03AQFiAA7t5kuqEw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1639082809998?e=1743033600&v=beta&t=7A2bvijA6RfuZGIjKXa0qcsHJE__47_n3X5E0CzRosI",

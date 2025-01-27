@@ -3,7 +3,7 @@ import StateContext, { ContextState } from '@/context/StateContext'
 import Link from 'next/link'
 import { TbMoon } from "react-icons/tb";
 import { TbSun } from "react-icons/tb";
-import NavLink from './NavLink';
+import NavLink from '../NavLink';
 
 
 export type HeaderLink = {
@@ -30,8 +30,8 @@ const Header = () => {
     },
     {
       isSection: true,
-      sectionId: "Proyects",
-      href: "/#Proyects",
+      sectionId: "Projects",
+      href: "/#Projects",
       label: "Proyectos",
       threshold: .25,
     },

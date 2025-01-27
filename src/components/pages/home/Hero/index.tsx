@@ -1,7 +1,7 @@
 import React, { MouseEventHandler, useEffect, useState } from 'react'
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TbMailForward } from "react-icons/tb";
-import PictureViewer from './PictureViewer';
+import PictureViewer from '../PictureViewer';
 
 const Hero = () => {
 

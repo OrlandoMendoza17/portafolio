@@ -1,11 +1,13 @@
 @import "./lib/reset";
 
-@import "../components/pages/styles/Hero";
-@import "../components/pages/styles/PictureViewer";
-@import "../components/pages/styles/WorkExperience";
-@import "../components/pages/styles/Proyects";
-@import "../components/pages/styles/AboutMe";
-@import "../components/pages/styles/Testimonials";
+@import "../components/pages/home/Hero/Hero";
+@import "../components/pages/home/PictureViewer/PictureViewer";
+@import "../components/pages/home/WorkExperience/WorkExperience";
+@import "../components/pages/home/Projects/Projects";
+@import "../components/pages/home/Projects/ProjectItem/ProjectItem";
+@import "../components/pages/home/Projects/ProjectViewer/ProjectViewer";
+@import "../components/pages/home/AboutMe/AboutMe";
+@import "../components/pages/home/Testimonials/Testimonials";
 
-@import "../components/widgets/styles/Header";
-@import "../components/widgets/styles/Badge";
+@import "../components/widgets/Header/Header";
+@import "../components/widgets/Badge/Badge";

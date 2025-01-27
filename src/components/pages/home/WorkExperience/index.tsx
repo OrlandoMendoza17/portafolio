@@ -39,7 +39,7 @@ const WorkExperience = () => {
           workExperience.map(({ title, place, time, description, link }, index) =>
             <li className="WorkExperience__item" key={index}>
               <div className="title">
-                <span className="text-5xl text-cyan-400 absolute left-[-4.2rem]">•</span>
+                <span className="">•</span>
                 <h3>{title}</h3>
                 <h4>{place}</h4>
                 <time>{time}</time>

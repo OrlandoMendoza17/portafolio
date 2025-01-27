@@ -1,0 +1,7 @@
+.Projects {
+  @apply mt-24;
+
+  &__container {
+    @apply flex flex-col gap-16;
+  }
+}

@@ -1,0 +1,90 @@
+.ProjectViewer {
+  @apply p-4;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: .25);
+
+  align-content: center;
+
+  &__modal {
+    @apply p-4 rounded-xl bg-gray-800 mx-auto;
+    width: 100%;
+    max-width: 1024px;
+    
+    &__image {
+      position: relative;
+      
+      min-height: 600px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      
+      img {
+        align-self: center;
+      }
+      // align-content: space-between;
+      
+      &__description {
+        @apply p-2;
+        // position: absolute;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // background-color: rgba($color: #000000, $alpha: .75)
+      }
+    }
+    
+    &__carousel {
+      @apply pt-2;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: .8rem;
+      
+      button {
+        @apply text-white bg-gray-700 px-2;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    
+    &__list {
+      @apply py-4;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 70px;
+      grid-template-rows: 40px;
+      gap: 8px;
+      // overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #4b5563 #111827;
+      transition: .3s;
+      
+      &__item {
+        @apply rounded-lg border-gray-800;
+        border-width: 2px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  p {
+    @apply text-white;
+  }
+}

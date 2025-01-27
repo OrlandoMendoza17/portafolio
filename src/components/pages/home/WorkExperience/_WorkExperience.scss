@@ -6,7 +6,7 @@
   }
 
   &__item {
-    @apply md:grid md:gap-10 ml-8 pb-12;
+    @apply md:grid md:gap-10 ml-12 pb-12;
     
     position: relative;
     grid-template-columns: repeat(5, minmax(auto, 1fr));
@@ -29,6 +29,9 @@
     .title{
       @apply pb-12 relative;
       grid-area: title;
+      span {
+        @apply text-5xl text-cyan-400 absolute left-[-4.2rem];
+      }
       h3{
         @apply text-xl font-bold text-cyan-400;
       }
