@@ -70,8 +70,8 @@ const ProjectViewer = ({ resources, setOpenedResources }: Props) => {
       <div className="ProjectViewer__modal">
         <figure className="ProjectViewer__modal__image">
           <img src={displayedResource.url} alt="" />
-          <p className="ProjectViewer__modal__image__description">{displayedResource.title}</p>
         </figure>
+        <p className="ProjectViewer__modal__image__description">{displayedResource.title}</p>
         <div className="ProjectViewer__modal__carousel">
           <button onClick={handlePreviousSection}>
             <IoIosArrowBack />

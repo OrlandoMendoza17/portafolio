@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Badge from '@/components/widgets/Badge'
+import Badge, { BadgeType } from '@/components/widgets/Badge'
 import { TbCode } from 'react-icons/tb'
 import { TbBrandGithub } from "react-icons/tb";
 import { LuLink } from "react-icons/lu";
@@ -18,6 +18,7 @@ export type Project = {
   cover: string;
   link: string | null;
   repo: string | null;
+  technologies: BadgeType[]
   resources: Resource[] | null;
 }
 
@@ -39,14 +40,15 @@ const ProjectItem = ({project}: Props) => {
       <div>
         <h3 className="mb-2">{name}</h3>
         <div className="grid gap-4">
-          <ul className="flex gap-2">
-            <li>
-              <Badge name="Next.js" />
-            </li>
-            <li>
-              <Badge name="Tailwind CSS" />
-            </li>
-          </ul>
+          <ul className="flex gap-2 items-start flex-wrap">
+            {
+              project.technologies.map((techname)=> 
+                <li>
+                  <Badge name={techname} />
+                </li>
+              )
+            }
+            </ul>
           <p dangerouslySetInnerHTML={{ __html: description }}></p>
           <div className="flex gap-4">
             {

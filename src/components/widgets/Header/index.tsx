@@ -45,7 +45,7 @@ const Header = () => {
     {
       isSection: false,
       sectionId: "",
-      href: "mailto:ommv.17@gmail.com",
+      href: "mailto:orlando.developer17@gmail.com",
       label: "Contacto",
       threshold: .25,
     },

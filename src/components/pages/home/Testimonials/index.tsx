@@ -10,7 +10,8 @@ const Testimonials = () => {
       company: "Alimentos Heinz C.A.",
       position: "User Services Manager",
       opinion: `"Orlando ha superado mis espectativas desde el diseño hasta el desarrollo".`,
-      letter: "Lorem",
+      // letter: "Lorem",
+      letter: null,
     },
     {
       picture: "https://media.licdn.com/dms/image/v2/D4D03AQFEtzjmxMYbXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715189020074?e=1743033600&v=beta&t=VmUZ1MVKfz7ShJKMdT4g24Mf4VXpk_cYPosdW18z27Y",

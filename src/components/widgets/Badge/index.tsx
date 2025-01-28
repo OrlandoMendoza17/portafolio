@@ -1,8 +1,10 @@
 import React from 'react'
 import { IconType } from 'react-icons';
-import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill, RiSupabaseFill } from "react-icons/ri";
+import { DiMsqlServer } from "react-icons/di";
+import { SiPuppeteer } from "react-icons/si";
 
-type BadgeType = "Next.js" | "Tailwind CSS"
+export type BadgeType = "Next.js" | "Tailwind CSS" | "Supabase" | "SQL Server" | "Puppeteer"
 
 type BadgeProps = {
   name: BadgeType;
@@ -27,6 +29,24 @@ const types: BadgeProps[] = [
     color: "bg-[#003159]",
     iconColor: "text-sky-400",
     Icon: RiTailwindCssFill,
+  },
+  {
+    name: "Supabase",
+    color: "bg-[#171717]",
+    iconColor: "text-[#30af76]",
+    Icon: RiSupabaseFill,
+  },
+  {
+    name: "SQL Server",
+    color: "bg-gray-800",
+    iconColor: "text-white",
+    Icon: DiMsqlServer,
+  },
+  {
+    name: "Puppeteer",
+    color: "bg-[#005f47]",
+    iconColor: "text-white",
+    Icon: SiPuppeteer,
   },
 ]
 
