@@ -43,8 +43,8 @@ const ProjectItem = ({project}: Props) => {
           <ul className="flex gap-2 items-start flex-wrap">
             {
               project.technologies.map((techname, key)=> 
-                <li>
-                  <Badge key={key} name={techname} />
+                <li key={key}>
+                  <Badge name={techname} />
                 </li>
               )
             }
