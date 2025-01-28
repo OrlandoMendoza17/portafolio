@@ -11,7 +11,7 @@ const Projects = () => {
   const projects: Project[] = [
     {
       name: "PlatziClon - Plataforma de aprendizaje profesional online",
-      description: "Clon del sitio web y navegación de Platzi, la plataforma de educación profesional en línea. <br/><br/> Se aplicó Web Scrapping con Puppeteer para la recolección de los datos y se usó Supabase como BaaS para el almacenamiento de los datos.",
+      description: "Clon del sitio web y navegación de Platzi, la plataforma de educación profesional en línea. <br/><br/> Se aplicó Web Scrapping con Puppeteer para la recolección automatizada de los datos del sitio web y se usó Supabase como BaaS para el almacenamiento de los mismos.",
       cover: "https://i.imgur.com/SywqE0s.png",
       link: "https://platzi-clon-alpha.vercel.app/",
       repo: "https://github.com/OrlandoMendoza17/Platzi-Clon",
@@ -114,7 +114,7 @@ const Projects = () => {
     },
     {
       name: "Heinz Product Loading App - Aplicación de carga de productos ",
-      description: "Sistema encargado de asignación y carga de productos de la empresa a los empleados mensual y semanalmente como beneficio del contrato colectivo.",
+      description: "Sistema encargado de asignación y carga de productos de manera automatizada a los empleados de la empresa Alimentos Heinz C.A., como beneficio del contrato colectivo.",
       cover: "https://i.imgur.com/7xXgkSn.png",
       // cover: "https://i.imgur.com/0NFSwll.png",
       link: null,
