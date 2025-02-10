@@ -13,7 +13,7 @@ const AboutMe = () => {
       <h2><VscAccount /> Sobre mí</h2>
       <article>
         <div className='order-2 md:order-1'>
-          <p>Me llamo Orlando, inicié mi carrera hace 3 años <strong className="featured dark:text-cyan-400">creando aplicaciones innovadoras con React.js y Next.js</strong>, y desde entonces me convertí en un apasionado del desarrollo web y no he parado de aprender.</p>
+          <p>Me llamo Orlando, inicié mi carrera hace 4 años <strong className="featured dark:text-cyan-400">creando aplicaciones innovadoras con React.js y Next.js</strong>, y desde entonces me convertí en un apasionado del desarrollo web y no he parado de aprender.</p>
           <p>Durante este tiempo, también tuve la oportunidad de <strong className="featured dark:text-cyan-400">desarrollar API REST con Express.js, utilizando MySQL, PostgreSQL y MongoDB</strong> como motores de bases de datos, siempre buscando optimizar y mejorar la eficiencia de mis proyectos.</p>
           <p><strong className="featured dark:text-cyan-400">Soy super optimista, determinante, tenaz, analítico y me encantan los retos.</strong> Mi enfoque se centra en seguir creciendo, mantenerme actualizado y cada día asumir nuevos retos y así contribuir al mundo de la tecnología.</p>
         </div>
