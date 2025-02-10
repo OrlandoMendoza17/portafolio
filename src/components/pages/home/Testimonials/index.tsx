@@ -16,7 +16,7 @@ const Testimonials = () => {
     {
       picture: "https://media.licdn.com/dms/image/v2/D4D03AQFEtzjmxMYbXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715189020074?e=1743033600&v=beta&t=VmUZ1MVKfz7ShJKMdT4g24Mf4VXpk_cYPosdW18z27Y",
       name: "Alejandra Mendoza",
-      company: "Crowdar",
+      company: "Veritran",
       position: "Senior Web Developer",
       opinion: `"Un excelente profesional que puede llevar a cabo un desarrollo completo de aplicaciones en general con las mejores practicas y soluciones.".`,
     },
