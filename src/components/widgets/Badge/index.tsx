@@ -1,10 +1,23 @@
 import React from 'react'
 import { IconType } from 'react-icons';
-import { RiTailwindCssFill, RiNextjsFill, RiSupabaseFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill, RiSupabaseFill, RiReactjsFill } from "react-icons/ri";
 import { DiMsqlServer } from "react-icons/di";
-import { SiPuppeteer } from "react-icons/si";
+import { SiPuppeteer, SiTypescript, SiPostgresql, SiPlaywright, SiJsonwebtokens, SiTrpc } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
-export type BadgeType = "Next.js" | "Tailwind CSS" | "Supabase" | "SQL Server" | "Puppeteer"
+export type BadgeType =
+  | "Next.js"
+  | "Tailwind CSS"
+  | "Supabase"
+  | "SQL Server"
+  | "Puppeteer"
+  | "React"
+  | "TypeScript"
+  | "tRPC"
+  | "PostgreSQL"
+  | "Playwright"
+  | "JWT"
+  | "Azure"
 
 type BadgeProps = {
   name: BadgeType;
@@ -47,6 +60,48 @@ const types: BadgeProps[] = [
     color: "bg-[#005f47]",
     iconColor: "text-white",
     Icon: SiPuppeteer,
+  },
+  {
+    name: "React",
+    color: "bg-[#20232a]",
+    iconColor: "text-[#61dafb]",
+    Icon: RiReactjsFill,
+  },
+  {
+    name: "TypeScript",
+    color: "bg-[#3178c6]",
+    iconColor: "text-white",
+    Icon: SiTypescript,
+  },
+  {
+    name: "tRPC",
+    color: "bg-[#398ccb]",
+    iconColor: "text-white",
+    Icon: SiTrpc,
+  },
+  {
+    name: "PostgreSQL",
+    color: "bg-[#336791]",
+    iconColor: "text-white",
+    Icon: SiPostgresql,
+  },
+  {
+    name: "Playwright",
+    color: "bg-[#2ead33]",
+    iconColor: "text-white",
+    Icon: SiPlaywright,
+  },
+  {
+    name: "JWT",
+    color: "bg-gray-800",
+    iconColor: "text-amber-300",
+    Icon: SiJsonwebtokens,
+  },
+  {
+    name: "Azure",
+    color: "bg-[#0078d4]",
+    iconColor: "text-white",
+    Icon: VscAzure,
   },
 ]
 
