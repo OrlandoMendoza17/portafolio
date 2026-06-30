@@ -41,8 +41,9 @@ const workExperience: WorkExperienceItem[] = [
     summary:
       "Plataforma B2B de facturación y analytics en monorepo Next.js.",
     highlights: [
-      "Automatizé procesos de facturación end-to-end: PDFs, consumo por API y tracking en tiempo real.",
-      "Creé mediante implementación de flujos críticos con E2E (Playwright) integrado a CI/CD.",
+      `Desarrollé custom links con integracion de "Open Graph" para la creación de campañas de marketing.`,
+      "Automaticé procesos de facturación end-to-end: PDFs, consumo por API y tracking en tiempo real.",
+      "Creé flujos críticos de testeo con E2E (Playwright) integrado a CI/CD.",
       "Desarrollé dashboard de métricas de negocio (MAU, análisis RFM).",
     ],
     stack: [
