@@ -5,7 +5,7 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      picture: "https://media.licdn.com/dms/image/v2/C4D03AQFiAA7t5kuqEw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1639082809998?e=1743033600&v=beta&t=7A2bvijA6RfuZGIjKXa0qcsHJE__47_n3X5E0CzRosI",
+      picture: "https://i.imgur.com/Zv43nYg.jpeg[/img]",
       name: "Yamileth Mujica",
       company: "Alimentos Heinz C.A.",
       position: "User Services Manager",
@@ -14,7 +14,7 @@ const Testimonials = () => {
       letter: null,
     },
     {
-      picture: "https://media.licdn.com/dms/image/v2/D4D03AQFEtzjmxMYbXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715189020074?e=1743033600&v=beta&t=VmUZ1MVKfz7ShJKMdT4g24Mf4VXpk_cYPosdW18z27Y",
+      picture: "https://i.imgur.com/GPEThId.jpeg",
       name: "Alejandra Mendoza",
       company: "Veritran",
       position: "Senior Web Developer",
@@ -31,9 +31,9 @@ const Testimonials = () => {
 
   return (
     <section className="Testimonials">
-      <h2><RiTeamFill/> Testimonios</h2>
+      <h2><RiTeamFill /> Testimonios</h2>
       {
-        testimonials.map(({name, opinion, company, position, picture, letter}, index)=>
+        testimonials.map(({ name, opinion, company, position, picture, letter }, index) =>
           <article key={index}>
             <figure>
               <img src={picture} alt="" />
